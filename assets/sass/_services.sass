@@ -1,0 +1,75 @@
+#services
+    padding: 50px 15px 100px
+    font-family: $font
+    .title
+        position: relative
+        width: 200px
+        height: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto 25px
+
+        .cir
+            position: absolute
+            background: #eef9ff
+            width: 180px
+            height: 180px
+            border-radius: 50%
+            top: auto
+        h1 
+            position: relative
+            font-size: 2.9rem
+            font-weight: 700
+            text-transform: uppercase
+            color: $mainColor
+            z-index: 1
+            letter-spacing: 4px
+           
+    .services-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 2rem
+        padding: 0 50px
+
+        .box
+            background: rgba($white, 0)
+            transition: all .3s ease-in-out
+            padding: 25px
+
+            &:hover
+                background: rgba($white, 1)
+                -webkit-box-shadow: 0px 30px 57px -10px rgba(0,0,0,0.25);
+                -moz-box-shadow: 0px 30px 57px -10px rgba(0,0,0,0.25);
+                box-shadow: 0px 30px 57px -10px rgba(0,0,0,0.25);
+                cursor: pointer
+
+            .fas
+                font-size: 2.2rem
+                margin: 2.5rem 0 2.8rem
+                color: $mainColor        
+        
+            h5 
+                font-size: 1rem
+                font-weight: 500
+                text-transform: uppercase
+                letter-spacing: 1.5px
+                color: $mainColor
+                margin-bottom: 2rem
+            
+            p 
+                font-size: .85rem
+                color: $pColor
+                line-height: 1.6
+                margin-bottom: 2rem
+
+        .blue
+            border-bottom: 3px solid $blue
+        
+        .orange
+            border-bottom: 3px solid $orange
+
+        .yellow
+            border-bottom: 3px solid $yellow
+
+
