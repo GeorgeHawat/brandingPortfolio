@@ -1,5 +1,5 @@
 #portfolio
-    padding: 50px 15px 100px
+    padding: 50px 65px 100px
     font-family: $font
     .title
         position: relative
@@ -26,10 +26,10 @@
             letter-spacing: 4px
            
     .portfolio-container
-        padding: 0 50px
+        // padding: 0 50px
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 200px 200px 25px 50px 50px 200px
+        grid-template-rows: 180px 180px 25px 50px 50px 180px
         grid-gap: 10px
         mar
 
@@ -40,44 +40,50 @@
             overflow: hidden
 
             .text-contain
-                background: black
+                background: $mainColor
                 opacity: 0
                 align-self: center
                 justify-self: center
                 width: 100%
                 height: 100%
-                padding: 20px 0 0 10px
-                transition: all .4s ease-in-out
+                padding: 20px 0 0 15px
+                transition: all .4s ease-in-out .15s
+                display: grid
                 .text
                     align-self: center
                     justify-self: center
                     color: white
                     text-decoration: none
-                    font-size: 2rem
+                    font-size: 1.5rem
                     text-transform: uppercase
                     width: 100%
                     height: 100%
-                    letter-spacing: 2.2px
-                
+                    letter-spacing: 2px
+                    transform: translate3d(-250px,0,0)
+                    transition: transform .4s ease-in-out 
+                                    
             &:hover
                 .text-contain
-                    background: black
-                    opacity: .75
+                    background: $mainColor
+                    opacity: .78
                     align-self: center
                     justify-self: center
                     width: 100%
                     height: 100%
                     display: grid
+                    
                     .text
                         align-self: center
                         justify-self: center
                         color: white
                         text-decoration: none
-                        font-size: 2rem
+                        font-size: 1.5rem
                         text-transform: uppercase
                         width: 100%
                         height: 100%
-                        letter-spacing: 2.2px
+                        letter-spacing: 2px
+                        transform: translate3d(0,0,0)
+                                                
                  
         .img1
             
@@ -120,7 +126,7 @@
             grid-column: 1/2
             grid-row: 5/7
             background: url(https://www.howtogeek.com/wp-content/uploads/2018/09/vac_lede.png)
-            background-position: top center
+            background-position: center center
             background-repeat: no-repeat
             background-size: cover
 
@@ -138,6 +144,6 @@
             grid-column: 3/4
             grid-row: 4/7
             background: url(https://images.unsplash.com/photo-1495121553079-4c61bcce1894?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)
-            background-position: top center
+            background-position: center center
             background-repeat: no-repeat
             background-size: cover
